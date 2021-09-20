@@ -165,6 +165,14 @@ body {
   z-index: -3;
 }
 
+small {
+  font-size: 75%;
+}
+
+#page1 {
+  text-align: center;
+}
+
 @keyframes pic3 {
   0% {
     transform: translate(-100%, 0);
