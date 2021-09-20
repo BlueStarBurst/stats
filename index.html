@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GOAT Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shapes.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="nav">
+        <h1 class="unselected" id="intro" onclick="repage(0)">INTRODUCTION</h1>
+        <h1 class="unselected" id="top" onclick="repage(2)">TOP 5</h1>
+        <h1 class=" unselected" id="stats" onclick="repage(7)">3 STATISTICS</h1>
+        <h1 class="unselected" id="math" onclick="repage(8)">MATH</h1>
+        <h1 class="unselected" id="results" onclick="repage(10)">RESULTS</h1>
+        <h1 class="unselected" id="conclusion" onclick="repage(12)">CONCLUSION</h1>
+    </div>
+    <div class="page" id="page1">
+        <h1>My GOAT Project</h1>
+        <p>Who is the best musician of all time?
+            <br /><br />Scroll or Use the arrow keys to progress
+        </p>
+    </div>
+    <div class="page" id="page2">
+        <h1>Why I chose music</h1>
+        <p>I chose music as the field for my GOAT Project because I like listening to music and I thought it would be
+            interesting to see how popular these musicians actually are.<br /><br />
+            :D
+        </p>
+    </div>
+    <div class="page" id="page3">
+        <div class="r">
+            <h1>
+                Panic! At the Disco
+            </h1>
+            <p>
+                A very popular Alternative/Rock band. I chose this band because I had a phase where the only songs I
+                listened to were in their album, <i>A Fever you Can't Sweat Out</i>.</p>
+            </p>
+        </div>
+        <div class="imgcont">
+            <img src="img/panic2.png" class="pic" />
+            <img src="img/panic3.png" class="pic1" />
+            <img src="img/panic4.png" class="pic2" />
+            <img src="img/panic5.png" class="pic3" />
+        </div>
+
+    </div>
+    <div class="page" id="page4">
+        <div class="imgcont">
+
+            <img src="img/taylor.png" class="pic" />
+            <img src="img/taylor2.png" class="pic1" />
+            <img src="img/taylor3.png" class="pic2" />
+            <img src="img/taylor4.png" class="pic3" />
+        </div>
+        <div class="l">
+            <h1>
+                Taylor Swift
+            </h1>
+            <p>
+                Another very popular pop musician. I chose Taylor Swift because I hear her name all the time.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="page" id="page5">
+
+        <div class="r">
+            <h1>
+                Beyoncé
+            </h1>
+            <p>
+                Another very popular pop musician. I chose this Beyoncé becuase I remembered that she sang at a
+                superbowl halftime show.
+            </p>
+        </div>
+        <div class="imgcont">
+            <img src="img/beyonce.png" class="pic" />
+            <img src="img/beyonce2.png" class="pic1" />
+            <img src="img/beyonce3.png" class="pic2" />
+            <img src="img/beyonce4.png" class="pic3" />
+        </div>
+    </div>
+
+    <div class="page" id="page6">
+        <div class="imgcont">
+
+            <img src="img/bts.png" class="pic" />
+            <img src="img/bts2.png" class="pic1" />
+            <img src="img/bts3.png" class="pic2" />
+            <img src="img/bts4.png" class="pic3" />
+        </div>
+        <div class="l">
+            <h1>
+                BTS
+            </h1>
+            <p>
+                A very popular K-Pop group. Although, I've never really listened to their music, I chose BTS because
+                they're supposed to be cool or something.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="page" id="page7">
+
+        <div class="r">
+            <h1>
+                Ed Sheeran
+            </h1>
+            <p>
+                A very popular musician. I picked Ed Sheeran because he was in a movie.
+            </p>
+        </div>
+        <div class="imgcont">
+            <img src="img/edsheeran.png" class="pic" />
+            <img src="img/edsheeran2.png" class="pic1" />
+            <img src="img/edsheeran3.png" class="pic2" />
+            <img src="img/edsheeran4.png" class="pic3" />
+        </div>
+    </div>
+
+    <div class="page" id="page8">
+        <h1>The Stats I Used</h1>
+        <p>The three statistics that I used were the total reported gross income from their latest tour, current
+            number of monthly listeners on spotify, and the total units sold for their most recent album. I chose these
+            statistics because I think that they give a good representation of current popularity.</p>
+    </div>
+    <div class="page" id="page9">
+        <img src="img/key.png" />
+    </div>
+    <div class="page" id="page10">
+        <img src="img/means.png" />
+        <p>I found these means by adding up the data from each stat and diving by 5 (the number of bands) and I found
+            the standard deviations by plugging in the data in my calculator and doing 1-var stats because I'm lazy.</p>
+    </div>
+    <div class="page" id="page11">
+        <img src="img/zscores.png" />
+        <p>I found these z-scores by using the stats, values, and formula from the last couple page. </p>
+    </div>
+    <div class="page" id="page12">
+        <h1>Composite Scores</h1>
+        <p>The composite score is the sum of the all the z-scores. </p>
+        <ol>
+            <li>
+                Ed Sheeran: 4.542
+            </li>
+            <br />
+            <li>
+                BTS: 0.011
+            </li>
+            <br />
+            <li>
+                Taylor Swift: -0.497
+            </li>
+            <br />
+            <li>
+                Beyoncé: -1.78
+            </li>
+            <br />
+            <li>
+                Panic! At the Disco: -2.275
+            </li>
+        </ol>
+    </div>
+    <div class="page" id="page13">
+        <h1>Conclusion</h1>
+        <p> The GOAT for current, popular musicians is Ed Sheeran with an outstanding composite score of 4.542. However,
+            this does not mean he is the GOAT of all musicians as I only picked 5 musicians that interested me. There
+            also might be more stats or data that I didn't use where the other bands excelled over Ed Sheeran. In order
+            to get more conclusive results, I'd have to take into account more musicians and more than 3
+            stats so that I could obtain more accurate results. </p>
+    </div>
+    <div class="page" id="page14">
+        <h1>Sources</h1>
+        <p>MLA isn't worth it atm</p>
+        <ul>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://touringdata.wordpress.com/">
+                    <p>Gross Tour Sales Data</p>
+                </a>
+
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/">
+                    <p>Spotify monthly listeners</p>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.riaa.com/">
+                    <p>Certifications and Sales for each album</p>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
